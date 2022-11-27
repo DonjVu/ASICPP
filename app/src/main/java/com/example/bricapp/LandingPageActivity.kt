@@ -21,6 +21,15 @@ class LandingPageActivity : AppCompatActivity() {
         recycler.layoutManager = layoutManager
         adapter = LandingPageRecyclerAdapter()
         recycler.adapter = adapter
+        var getBarcodeBtn: Button = findViewById(R.id.barcodeBtn)
+
+
+
+        getBarcodeBtn.setOnClickListener(){
+
+            val barcodeIntent = Intent(this, BarcodeActivity::class.java)
+            startActivity(barcodeIntent)
+        }
 
     }
 }
