@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/asicpp_removebg_preview"
+        android:width="100dp"
+        android:height="100dp"
+        >
+    </item>
+</layer-list>

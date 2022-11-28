@@ -5,7 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-
+import android.widget.Button
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.ImageButton
 
 //This class controls how the "recyclerView" works on landing_page.xml
 //the recycler view holds multiple instances of news_cardview.xml
@@ -13,7 +17,6 @@ class LandingPageRecyclerAdapter: RecyclerView.Adapter<LandingPageRecyclerAdapte
 
     private var newsTitles = arrayOf<String>()
     private var newsDescs = arrayOf<String>()
-
     init{
         getData()
     }
@@ -37,8 +40,8 @@ class LandingPageRecyclerAdapter: RecyclerView.Adapter<LandingPageRecyclerAdapte
 
     //TODO: call database and store data about news titles and descriptions
     fun getData(){
-        newsTitles = arrayOf("News #1", "News #2", "Something Exciting")
-        newsDescs = arrayOf("Example description #1", "Example description #2", "Something cool is happening soon!!kjzjsdf;dskjfljdsljflkdsknfjsdnfkl;smmcsdfesfefdsfsfhbngfngf")
+        newsTitles = arrayOf("News #1", "News #2", "News #3", "News #4", "News #4", "News #4", "News #4")
+        newsDescs = arrayOf("Example description #1", "Example description #2", "Example description #3", "Example description #4", "Example description #4", "Example description #4", "Example description #4")
     }
 
 
@@ -48,8 +51,14 @@ class LandingPageRecyclerAdapter: RecyclerView.Adapter<LandingPageRecyclerAdapte
         var newsDesc: TextView
 
         init{
-            newsTitle = itemView.findViewById(R.id.newsTitleText)
-            newsDesc = itemView.findViewById(R.id.newsDescText)
+            newsTitle = itemView.findViewById(R.id.programTitleText)
+            newsDesc = itemView.findViewById(R.id.programDescText)
+            itemView.setOnClickListener{
+            }
         }
+
+
     }
+
+
 }
