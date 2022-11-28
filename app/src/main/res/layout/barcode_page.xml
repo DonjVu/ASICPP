@@ -29,9 +29,22 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#8CC688"
         android:minWidth="200dip"
         android:text="REFRESH"
         app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/closeBarcodeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#7C8FD3"
+        android:minWidth="200dip"
+        android:text="DONE"
+        app:cornerRadius="0dp" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

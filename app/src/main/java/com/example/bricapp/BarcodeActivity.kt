@@ -2,22 +2,28 @@ package com.example.bricapp
 
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.oned.Code128Writer
 
-class BarcodeActivity : AppCompatActivity() {
+class BarcodeActivity : DialogFragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.barcode_page)
 
@@ -26,6 +32,29 @@ class BarcodeActivity : AppCompatActivity() {
         var refreshBtn: Button = findViewById(R.id.refreshBarcodeBtn)
 
         displayBitmap("10145432932", barcodeImg, barcodeText)
+
+    }*/
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        var rootView: View = inflater.inflate(R.layout.barcode_page, container, false)
+        return rootView
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var barcodeImg: ImageView = view.findViewById(R.id.barcodeImg)
+        var barcodeText: TextView = view.findViewById(R.id.barcodeText)
+        var refreshBtn: Button = view.findViewById(R.id.refreshBarcodeBtn)
+        var closeBtn: Button = view.findViewById(R.id.closeBarcodeBtn)
+
+        displayBitmap("10145432932", barcodeImg, barcodeText)
+
+
+        closeBtn.setOnClickListener{
+            dismiss()
+        }
 
     }
 
@@ -81,8 +110,8 @@ class BarcodeActivity : AppCompatActivity() {
         image.setImageBitmap(
             createBarcodeBitmap(
                 barcodeValue = value,
-                barcodeColor = ContextCompat.getColor(this, R.color.black),
-                backgroundColor = ContextCompat.getColor(this, R.color.white),
+                barcodeColor = Color.BLACK,
+                backgroundColor = Color.WHITE,
                 widthPixels = widthPixels,
                 heightPixels = heightPixels
             )
