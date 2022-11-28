@@ -16,11 +16,12 @@ class LandingPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.landing_page)
 
-        val recycler: RecyclerView = findViewById(R.id.landingPageRecyclerView)
+        val recycler: RecyclerView = findViewById(R.id.calendarRecyclerView)
         layoutManager = LinearLayoutManager(this)
         recycler.layoutManager = layoutManager
         adapter = LandingPageRecyclerAdapter()
         recycler.adapter = adapter
 
     }
+
 }

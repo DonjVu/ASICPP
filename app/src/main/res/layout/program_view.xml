@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/newsCardView"
+    android:id="@+id/programView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -18,7 +18,7 @@
         <TextView
             android:id="@+id/programTitleText"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
+            android:layout_height="66dp"
             android:text="Program Title"
             android:textColor="#020202"
             android:textSize="25sp" />
@@ -26,13 +26,13 @@
         <TextView
             android:id="@+id/programDescText"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:text="Program Description" />
+            android:layout_height="568dp"
+            android:text="program Description" />
 
         <Button
-            android:id="@+id/viewProgramBtn"
+            android:id="@+id/registerProgramBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="VIEW PROGRAM" />
+            android:layout_height="82dp"
+            android:text="Register" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
