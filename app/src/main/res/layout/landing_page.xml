@@ -27,8 +27,8 @@
         android:layout_width="413dp"
         android:layout_height="334dp"
         android:layout_below="@id/idTVDate"
-        app:layout_constraintTop_toBottomOf="@+id/idTVDate"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTVDate" />
 
     <TextView
         android:layout_width="wrap_content"

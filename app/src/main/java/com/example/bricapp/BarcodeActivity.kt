@@ -1,6 +1,7 @@
 package com.example.bricapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.media.Image
@@ -20,6 +21,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.oned.Code128Writer
+import java.lang.NullPointerException
 
 class BarcodeActivity : DialogFragment() {
 

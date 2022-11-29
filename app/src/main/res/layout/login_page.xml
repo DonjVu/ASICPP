@@ -50,10 +50,10 @@
 
     <Button
         android:id="@+id/signUpBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="161dp"
         android:layout_height="wrap_content"
-        android:textColor="#09553b"
         android:backgroundTint="@color/white"
-        android:text="Sign Up" />
+        android:text="Sign Up"
+        android:textColor="#09553b" />
 
 </LinearLayout>
