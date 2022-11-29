@@ -4,12 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/asicpplogo"
+        android:icon="@drawable/asicppicon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BricApp">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +19,7 @@
         </activity>
         <activity
             android:name=".SignUpActivity"
-            android:label="@string/app_name" >
+              android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".LandingPageActivity"
