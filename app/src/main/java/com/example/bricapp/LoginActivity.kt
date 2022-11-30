@@ -27,8 +27,8 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText: EditText = findViewById(R.id.passwordEditText)
 
         //TODO: DONT FORGET TO REMOVE THESE THEY CLEAR THE STORED LOGIN TOKEN
-        //editor.clear()
-        //editor.apply()
+        editor.clear()
+        editor.apply()
 
         //go to landing page immediately if there is a login token
         if(checkLogin(settings)){
@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         loginBtn.setOnClickListener(){
 
             if(login(usernameEditText.text.toString(), passwordEditText.text.toString())){
-                generateToken(editor)
+                generateToken(editor,usernameEditText.text.toString())
                 goToLandingPage(getTokenFromMemory(settings))
             } else{
                 //TODO: show that login failed
@@ -94,12 +94,12 @@ class LoginActivity : AppCompatActivity() {
 
     //TODO: call database to login and return true if login was valid
     private fun login(username: String, password: String): Boolean{
-        return true
+        return CppAccountDB.isSignInValid(username, password)
     }
 
     //TODO: generate a login token after function "login" was called and store it in shared preferences
-    private fun generateToken(editor: SharedPreferences.Editor){
-        storeToken(editor, "123")
+    private fun generateToken(editor: SharedPreferences.Editor, username: String){
+        storeToken(editor, ""+CppAccountDB.getStudentIDFromName(username))
     }
 
 }
