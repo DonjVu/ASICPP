@@ -1,4 +1,4 @@
-# Cal Poly Pomona Companion App
+# Cal Poly Pomona's ASICPP Mobile Application
 
 Welcome to the Cal Poly Pomona Companion App repository! This Android application serves as a streamlined alternative to the existing ASICPP app at Cal Poly Pomona. It offers a range of features aimed at enhancing the campus experience for students, including event registration, barcode generation for facility access, and a calendar for tracking important events.
 
