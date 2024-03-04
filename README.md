@@ -15,17 +15,17 @@ Welcome to the Cal Poly Pomona ASICPP app repository! This Android application s
    New users can easily create accounts within the app, providing their student ID information for verification.
 
 ### Newsletter
-   [![Newsletter GIF](url_to_newsletter.gif)](url_to_newsletter.gif)
+   ![Newsletter GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG5kbXp1c3NoNXZkZno5MmFjNHI1NmE0NHdqanBvaTZkdWk5d2tkaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y692RY4j7rv7v8yo2Q/giphy.gif)
 
    Stay up-to-date with the latest campus news and events through the app's integrated newsletter feature.
 
 ### Calendar
-   [![Calendar GIF](url_to_calendar.gif)](url_to_calendar.gif)
+   ![Calendar GIF](https://media.giphy.com/media/zOjST8leqSUzjXMLHZ/giphy.gif)
 
    Keep track of important events, deadlines, and academic schedules with the app's calendar functionality.
 
 ### Barcode Generation
-   [![Barcode GIF](url_to_barcode.gif)](url_to_barcode.gif)
+   ![Barcode GIF](https://media.giphy.com/media/ufB3cNwgJfiuBq7mVA/giphy.gif)
 
    Conveniently generate barcodes for access to campus facilities, events, and services.
 
@@ -39,7 +39,7 @@ To get started with the Cal Poly Pomona Companion App, follow these steps:
 
 ## Contributing
 
-Contributions to the development of the Cal Poly Pomona Companion App are welcome! If you'd like to contribute, please follow these guidelines:
+Contributions to the development of the ASICPP are welcome! If you'd like to contribute, please follow these guidelines:
 
 - Fork the repository and create your branch from `main`.
 - Make your changes and test thoroughly.
