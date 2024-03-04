@@ -5,7 +5,7 @@ Welcome to the Cal Poly Pomona ASICPP app repository! This Android application s
 ## Features
 
 ### Login
-   [![Login GIF]([https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnY0bGQydjBmOGhycWJscDBibXlxZTlnbzdzcjhpNHE0amVncmJ6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p99zEoyryjYeyyO4lm/giphy.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnY0bGQydjBmOGhycWJscDBibXlxZTlnbzdzcjhpNHE0amVncmJ6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p99zEoyryjYeyyO4lm/giphy.gif))]([url_to_login.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnY0bGQydjBmOGhycWJscDBibXlxZTlnbzdzcjhpNHE0amVncmJ6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p99zEoyryjYeyyO4lm/giphy.gif))
+   [![Login GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnY0bGQydjBmOGhycWJscDBibXlxZTlnbzdzcjhpNHE0amVncmJ6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p99zEoyryjYeyyO4lm/giphy.gif)
 
    The app provides a secure login system for students to access their accounts and personalized features.
 
